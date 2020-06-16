@@ -8,14 +8,14 @@ import android.widget.AutoCompleteTextView;
 import android.widget.ProgressBar;
 import android.widget.Spinner;
 
-public class Lap11_3Activity extends AppCompatActivity {
+public class Lab11_3Activity extends AppCompatActivity {
 
     ProgressBar progressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lap11_3);
+        setContentView(R.layout.activity_lab11_3);
 
         Spinner spinner = findViewById(R.id.spinner);
 

@@ -8,12 +8,12 @@ import android.widget.ListView;
 
 import java.util.ArrayList;
 
-public class Lap10_2Activity extends AppCompatActivity {
+public class Lab10_2Activity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lap10_2);
+        setContentView(R.layout.activity_lab10_2);
 
         ListView listView = findViewById(R.id.custom_listview);
 

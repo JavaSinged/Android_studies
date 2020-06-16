@@ -12,7 +12,7 @@ import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.Toast;
 
-public class Lap11_2Activity extends AppCompatActivity implements View.OnClickListener{
+public class Lab11_2Activity extends AppCompatActivity implements View.OnClickListener{
 
     Button lineBtn;
     Button barBtn;
@@ -21,7 +21,7 @@ public class Lap11_2Activity extends AppCompatActivity implements View.OnClickLi
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_lap11_2);
+        setContentView(R.layout.activity_lab11_2);
 
         webView = findViewById(R.id.webview);
         lineBtn = findViewById(R.id.btn_chart_line);
@@ -65,7 +65,7 @@ public class Lap11_2Activity extends AppCompatActivity implements View.OnClickLi
     class MyWebClient extends WebViewClient {
         @Override
         public boolean shouldOverrideUrlLoading(WebView view, String url){
-            Toast t = Toast.makeText(Lap11_2Activity.this, url, Toast.LENGTH_SHORT);
+            Toast t = Toast.makeText(Lab11_2Activity.this, url, Toast.LENGTH_SHORT);
             t.show();
 
             return true;
@@ -75,7 +75,7 @@ public class Lap11_2Activity extends AppCompatActivity implements View.OnClickLi
     class MyWebChrome extends WebChromeClient{
         @Override
         public boolean onJsAlert(WebView view, String url, String message, JsResult result){
-            Toast t =Toast.makeText(Lap11_2Activity.this, message, Toast.LENGTH_SHORT);
+            Toast t =Toast.makeText(Lab11_2Activity.this, message, Toast.LENGTH_SHORT);
             t.show();
             result.confirm();
             return true;
